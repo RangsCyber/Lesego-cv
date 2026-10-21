@@ -25,7 +25,7 @@
 <div class="section">
   <h2>Cyber Skills In Progress</h2>
   <span class="skill">Linux Administration</span>
-  <splan class="skill">Network Fundamentals CCNA</span>
+  <span class="skill">Network Fundamentals CCNA</span>
   <span class="skill">Nginx / Web Servers</span>
   <span class="skill">SSH Hardening</span>
   <span class="skill">Bash Scripting</span>
@@ -47,7 +47,38 @@ border-left:4px solid #24292f;">
   <p><strong>Commands Used:</strong> <code>sudo apt update, sudo ufw enable, systemct1 status nginx, ssh-keygen</code></p>
   <p style="color:green; font-weight:bold;"> Status: Live & Verified - 12 Oct 2026</p>
 </section>
- 
+
+<div class="section">
+  <h2>Attack & Defence Projects</h2>
+
+  <div class="projects">
+    <h3>Lab 02: RANGS Cyber port Scanner v1.0 [COMPLETED]</h3>
+    <p><strong>Objective:</strong> Build a custom Python attack tool to enumerate open network services - core SOC Analyst / Penetration Tester skill.</p>
+	<img src="cyber-scan-lab02.jpg" alt="Lab 02 Results" style="width:100%; max-width:700px; border-radius:8px"; border:1px solid #333; margin:10px 0;">
+
+	<p><strong>The Code That Made It Possible (cyber-scan.py):</strong></p> 
+	<ul>
+	<li>Used Python <code>socket</code> module to create TCP connections</li>
+	<li>Built function <code>scan_port(ip, port)</code> with 1s timeout</li>
+	<li>Loop through 12 common ports: 21, 22, 23, 25, 53, 80, 110, 139, 443, 445,3306, 8080</li>
+	<li>Display OPEN ports = potential attack surface</li>
+	</ul>
+
+	<p><strong>Commands Used:</strong><br>
+	<code>mkdir -p ~/cyber-projects</code><br>
+	<code>nano cyber-scan.py</code> (wrote 29 lines Python)<br>
+	<code>python3 cyber-scan.py</code><br>
+	<code>Target: 127.0.0.1 (localhost)</code></p>
+
+	<p><strong>Results:</strong><br>
+    Successfully detected OPEN ports: <strong>22/SSH and 80/HTTP</strong><br>
+	Proved scanner logic works for future external target scans<br>
+	Screenshot captured as proof of execution</p>
+
+	<p><strong>Tools:</strong> Python3, Linux Terminal, Ubuntu 22.04 LTS, VirtualBox, Socket Programming, Bash</p>
+	<p><strong>Date:</strong>Completed 12 Oct 2026</p>
+  </div>
+</div>
 
 <div class="section">
   <h2>Lab Projects</h2>
