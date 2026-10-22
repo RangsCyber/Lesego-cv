@@ -81,29 +81,22 @@ border-left:4px solid #24292f;">
 </div>
 
 <div class="project">
-  <h3>Lab 03: Nmap Vulnerability Assessment [COMPLETED]</h3>
-  <p><strong>Objective:</strong> Service enumeration and automated CVE detection - Core SOC Analyst skill.</p>
+<h3>Lab 03: Nmap Vulnerability Assessment [COMPLETED]</h3>
+<p><strong>Objective:</strong> Service enumeration and automated CVE detection - Core SOC Analyst skill.</p>
 
-  <p><strong>Scan 1 - Service & Discovery (nmap -sC -sV -O 192.18.56.101):</strong></p>
-  <img src="cyber-scan-lab03.png" 
-	  alt="Nmap Service Scan" 
-	  style="width:100%; max-width:700px; border-radius:8px; border:1px 
-	  solid #333; margin:10px 0;>
+<p><strong>Scan 1 - Service & OS Discovery (nmap -sC -sV -O 192.168.56.101):</strong></p>
+<img src="cyber-scan-lab03.png" alt="Nmap Service Scan" style="width:100%; max-width:700px; border-radius:8px; border:1px solid #333; margin:10px 0;">
 
-  <p><strong>Scan 2 - Vulnerability Assessment (nmap --script vuln 192.168.56.101):</strong></p>
-  <img src="cyber-scan-lab03.1.jpg" 
-	alt="Nmap Vuln Scan" 
-	style="width:100%; max-width:700p; border-radius:8px; border:1px 
-	solid #333; margin:10px 0;">
+<p><strong>Scan 2 - Vulnerability Assessment (nmap --script vuln 192.168.56.101):</strong></p>
+<img src="cyber-scan-lab03.1.jpg" alt="Nmap Vuln Script Scan" style="width:100%; max-width:700px; border-radius:8px; border:1px solid #333; margin:10px 0;">
 
-  <p><strong>Methodology:</strong></p>
-  <ul>
-  <li><code>nmap -sC -sV -O</code> = OS + Service Version + Safe Scripts</li>
-  <li><code>--script vuln</code> = 50+ automated CVE checks</li>
-  <li>Correlated with custom Python scanner from Lab 02</li>
-  </ul>
-  <p><strong>Findings:</strong> OpenSSH 8.9p1 + nginx 1.18.0 | CVE-2011-3192 Detected (Apache Byterange DoS) | XXS/CSRF Negative 
-  | <strong>Tools:</strong> Nmap 7.80, NSE | <strong>Date:</strong> 21 Oct 2026</p>
+<p><strong>Methodology:</strong></p>
+<ul>
+<li><code>nmap -sC -sV -O</code> = OS + Service Version + Safe Scripts</li>
+<li><code>--script vuln</code> = 50+ automated CVE checks (http-csrf, http-dombased-xss, http-slowloris etc)</li>
+<li>Correlated with custom Python scanner from Lab 02</li>
+</ul>
+<p><strong>Findings:</strong> OpenSSH 8.9p1 + nginx 1.18.0 | CVE-2011-3192 Detected (Apache Byterange DoS) | XSS/CSRF Negative | Date: 21 Oct 2026</p>
 </div>
 
 <div class="section">
